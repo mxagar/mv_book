@@ -1,0 +1,7 @@
+= Machine Vision Algorithms and Applications
+Summary and notes of the book by Carsten Steger, Markus Ulrich, and Christian Wiedemann.
+:toc:
+
+include::ch01.asciidoc[]
+
+include::ch02.asciidoc[]

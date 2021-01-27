@@ -1,0 +1,50 @@
+= Chapter 1: Introduction
+:toc:
+
+// Machine Vision Algorithms and Applications
+// Steger, Ulrich, Wiedemann
+
+== 1.1 Common tasks solved in machine vision
+* Object identification: classify
+
+* Position detection: locate known objects
+
+* Completeness checking
+- Was product assembled correctly?
+
+* Shape and dimensional inspection: check geometric parameters
+
+* Surface inspection: scratches, etc.
+
+== 1.2 Components of a typical machine vision system
+
+*See Fig 1.1, page 2*
+
+* Object carried maybe in conveyor belt
+
+* Photoelectric sensor triggers camera, which acquires image
+- Lens an dobjective of the camera carefully chosen
+
+* Object illuminated with specially designed illumination
+- Example: stroboscopic lamp = flashes, instants illuminated
+
+* Camera deliver image to a camera-computer interface
+- example: a frame grabber
+- if not a frame grabber, we can use a standard interface
+. Firewire
+. USB (3)
+. Ethernet
+
+* Computer can be: regular, industrial PC, computer integrated to camera (embedded devices)
+
+* Computer can have
+- a standard processor
+- a digital signal processor (DSP)
+- a fiel-programmable gate array (FPGA)
+
+* Image processing happens and an action can be triggered
+- Action is communicated to a controller, eg a PLC
+- The controller communicates and activates an actuator
+. Interfaces
+.. Time critical, realtime: fieldbus
+.. Non time-critical: ethernet
